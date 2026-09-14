@@ -35,6 +35,7 @@ jobs:
 
       - name: Build Installer (Inno Setup)
         run: |
+          Copy-Item LICENSE LICENSE.txt
           & "C:\Program Files (x86)\Inno Setup 6\ISCC.exe" installer.iss
 
       - name: Upload EXE to Release
