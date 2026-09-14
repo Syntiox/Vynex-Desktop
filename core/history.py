@@ -4,7 +4,7 @@ from datetime import datetime
 
 class HistoryManager:
     def __init__(self):
-        self.history_dir = os.path.join(os.path.expanduser('~'), '.sh4lu-z', 'syntiox dl')
+        self.history_dir = os.path.join(os.path.expanduser('~'), '.sh4lu-z', 'Syntiox DL')
         self.history_path = os.path.join(self.history_dir, 'history.json')
         self.history = []
         self.load_history()

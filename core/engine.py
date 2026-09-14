@@ -232,6 +232,7 @@ class SyntioxEngine:
         return [{'id': f['id'], 'abr': f['abr'], 'ext': f['ext'], 'label': f['label']} for f in sorted_audio]
 
     def download(self, url, format_id='best', is_audio=False, progress_hook=None, custom_path=None, audio_quality='320', audio_format='mp3', video_format='mp4'):
+        self.is_cancelled = False
         if self.is_cancelled:
             return {"status": "error", "message": "Cancelled"}
             

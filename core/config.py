@@ -3,7 +3,7 @@ import os
 
 class ConfigManager:
     def __init__(self):
-        self.config_dir = os.path.join(os.path.expanduser('~'), '.sh4lu-z', 'syntiox dl')
+        self.config_dir = os.path.join(os.path.expanduser('~'), '.sh4lu-z', 'Syntiox DL')
         self.config_path = os.path.join(self.config_dir, 'config.json')
         self.config = {
             "theme": "Dark",
